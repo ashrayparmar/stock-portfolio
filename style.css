@@ -1,4 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  background-color: #111827;
+}
+
+.section {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
+#name {
+  display: block;
+  margin: auto;
+}
+
+#btnCalculate {
+  color: white;
+  font-size: 17px;
+  background-color: blue;
+  height: 6vh;
+  width: 110px;
+  display: block;
+  margin: auto;
+  outline: none;
+  border-radius: 50px;
+  box-shadow: none;
+  margin-top: 20px;
+  border: black;
+  box-sizing: border-box;
 }

@@ -17,15 +17,22 @@ body {
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   font-family: "Rubik", sans-serif;
   color: white;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 #name {
   display: block;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 4vh;
+  text-align: center;
+  width: 18%;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #btnCalculate {
@@ -42,4 +49,38 @@ h1 {
   margin-top: 20px;
   border: black;
   box-sizing: border-box;
+}
+
+#price {
+  height: 3vh;
+  text-align: center;
+  width: 10%;
+  font-weight: bold;
+}
+
+#quantity {
+  height: 3vh;
+  text-align: center;
+  width: 10%;
+  font-weight: bold;
+}
+
+#currentPrice {
+  height: 3vh;
+  text-align: center;
+  width: 10%;
+  font-weight: bold;
+}
+
+#output {
+  border: 3px solid white;
+  height: 10vh;
+  width: 30%;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
 }

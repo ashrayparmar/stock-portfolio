@@ -4,6 +4,7 @@ var stockQuantity = document.querySelector("#quantity");
 var currentPrice = document.querySelector("#currentPrice");
 var outputDiv = document.querySelector("#output");
 var btn = document.querySelector("#btnCalculate");
+var bgColor = ["#10B981","#EF4444"];
 
 function calculate() {
     if(stockPrice.value == '' || stockQuantity.value == '' || currentPrice.value == '') {
@@ -31,10 +32,14 @@ function checkProfitLoss() {
     else if(curValue> total) {
         var profit = curValue - total
         var profitPercent = Math.round((profit/total)*100);
-        outputDiv.innerHTML= (profitPercent+"% gain on Investment of "+ total +" Rs");
+        outputDiv.innerHTML= (stockName.value + " is giving you " + profitPercent+"% gain on Investment of "+ total +" Rs");
+        outputDiv.style.backgroundColor = bgColor[0];
     }
     else {
-        alert("loss")
+        var loss = total - curValue
+        var lossPercent = Math.round((loss/total)*100);
+        outputDiv.innerHTML= (stockName.value + " is giving you " + lossPercent+"% gain on Investment of "+ total +" Rs");
+        outputDiv.style.backgroundColor = bgColor[1];
     }
 }
 
